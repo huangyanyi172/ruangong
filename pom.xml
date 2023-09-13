@@ -57,7 +57,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <useUniqueVersions>false</useUniqueVersions>
-                            <mainClass>com.azhu.main.MainPaperCheck</mainClass>
+                            <mainClass>main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

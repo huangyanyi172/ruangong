@@ -34,8 +34,9 @@ public class SimHashUtils {
     public static String getSimHash(String str) {
         // 文本长度太短时HanLp无法取得关键字
         try {
+            if (str.length() == 0) throw new Exception("文件为空");
             if (str.length() < 200) throw new ShortStringException("文本过短，难以判断！");
-        } catch (ShortStringException e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
